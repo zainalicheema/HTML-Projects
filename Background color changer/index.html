@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Changer</title>
+</head>
+<body>
+    <input type="color" id="colorPicker">
+    <script>
+        const colorPicker = document.getElementById('colorPicker');
+
+colorPicker.addEventListener('input', () => {
+    document.body.style.backgroundColor = colorPicker.value;
+});
+
+    </script>
+
+    <!-- <select id="colorPicker">
+        <option value="#ff0000">Red</option>
+        <option value="#00ff00">Green</option>
+        <option value="#0000ff">Blue</option>
+        </select>
+        <script>
+            const colorPicker = document.getElementById('colorPicker');
+
+colorPicker.addEventListener('change', () => {
+    document.body.style.backgroundColor = colorPicker.value;
+});
+
+        </script> -->
+
+        <!-- <button id="mode" onclick="bgChange()">Change Theme</button>
+        <p>cSuccessfully</p>
+        <script>
+            let modebtn = document.querySelector("#mode");
+            let body = document.querySelector("body");
+            let currMode="white";
+            function bgChange(){
+                if(currMode == "white"){
+                    body.style.backgroundColor ="black";
+                    body.style.color ="white";
+                    currMode = "black";
+                    modebtn.innerText = "Change to Light Mode";
+
+                }
+                else{
+                    body.style.backgroundColor ="white";
+                    body.style.color ="black";
+                    currMode = "white";
+                    modebtn.innerText = "Change to Dark Mode";
+                }
+            }
+        </script> -->
+</body>
+</html>
